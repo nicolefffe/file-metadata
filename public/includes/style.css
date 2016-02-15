@@ -1,0 +1,46 @@
+body {
+  padding-top: 70px;
+}
+
+#fileGroup {
+  margin: 1vh 20vw 5vh 20vw;
+}
+
+#output {
+  border: solid black 1px;
+  margin: 5vh 20vw 5vh 20vw;
+}
+
+#directions {
+  margin-left: 20vw;
+  margin-right: 20vw;
+  font-weight: bold;
+}
+
+#readme {
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+/* file input css from http://www.abeautifulsite.net/whipping-file-inputs-into-shape-with-bootstrap-3/ */
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}

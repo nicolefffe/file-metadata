@@ -1,0 +1,23 @@
+doctype html
+
+html(lang="en")
+    include ../../public/includes/header.jade
+
+    body
+        div.container
+            p#directions Upload a file to view its size
+            div#fileGroup.input-group
+                span.input-group-btn
+                    span.btn.btn-default.btn-file Browse
+                        input#chooseFile(type='file')
+                span#showFile.form-control(type='text', readonly)
+                span.input-group-btn
+                    button#submitFile.btn.btn-default(type='button') Submit
+            pre#output Output goes here...
+            div#readme
+                a(href="/README") README.md
+                span  &nbsp;*&nbsp;
+                a(href="http://github.com/nicolefffe") @nicolefffe
+        script(type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js')
+        script
+            include ../../public/includes/send.js
